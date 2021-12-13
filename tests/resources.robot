@@ -74,4 +74,8 @@ Sort Items By
     [Arguments]     ${sorting}
     Select From List By Value     css:*[data-test="product_sort_container"]    ${sorting}
 
+Items Should Be Sorted By
+    [Arguments]    ${sortedby}
+    Element Text Should Be  class:active_option    ${sortedby}
+
 
